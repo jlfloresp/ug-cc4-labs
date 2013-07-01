@@ -7,11 +7,11 @@
         <meta name="viewport" content="width=device-width">
         
         <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" type="text/css" href="/css/syntax.css">
-	<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/syntax.css">
+	<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/bootstrap/css/bootstrap.min.css"/>
         
         <!-- Custom CSS -->
-        <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/main.css">
     </head>
     <body>
       <div id="wrap">
@@ -25,9 +25,9 @@
 		  <span class="icon-bar"></span>
 		</a>
 		<a href="/">
-		  <img class="brand-logo pull-left" src="/images/ug_128.png" width="32px">
+		  <img class="brand-logo pull-left" src="{{site.baseurl}}/images/ug_128.png" width="32px">
 		</a>
-		<a class="brand" href="/">{{ site.name }}</a>
+		<a class="brand" href="{{site.baseurl}}/">{{ site.name }}</a>
 		<div class="nav-collapse collapse">
 		  <ul class="nav">
 		    <li class="active"><a href="#">Home</a></li>
@@ -45,14 +45,14 @@
 		{% for post in site.posts %}
 		  {% if post.title == page.title %}
 		  <li class="active">
-		    <a href="{{ post.url }}">
+		    <a href="{{site.baseurl}}{{ post.url }}">
 		      <i class="icon-chevron-right"></i>
 		      {{ post.title }}
 		    </a>
 		  </li>
 		  {% else %}
 		  <li>
-		    <a href="{{ post.url }}">
+		    <a href="{{site.baseurl}}{{ post.url }}">
 		      <i class="icon-chevron-right"></i>
 		      {{ post.title }}
 		    </a>
@@ -83,6 +83,6 @@
       </div>
     </body>
     
-    <script type="text/javascript" src="/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/js/jquery.min.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/bootstrap/js/bootstrap.min.js"></script>
 </html>

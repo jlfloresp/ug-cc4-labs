@@ -3,3 +3,4 @@ pygments: true
 timezone: America/Guatemala
 relative_permalinks: false
 baseurl: /ug-cc4-labs
+permalink: none

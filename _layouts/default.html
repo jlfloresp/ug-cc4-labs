@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+        
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/syntax.css">
+	<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/bootstrap/css/bootstrap.min.css"/>
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/main.css">
+    </head>
+    <body>
+      <div id="wrap">
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container-fluid">
+	      <div class="span8 offset2">
+		<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		</a>
+		<a href="/">
+		  <img class="brand-logo pull-left" src="{{site.baseurl}}/images/ug_128.png" width="32px">
+		</a>
+		<a class="brand" href="{{site.baseurl}}/">{{ site.name }}</a>
+		<div class="nav-collapse collapse">
+		  <ul class="nav">
+		    <li class="active"><a href="#">Home</a></li>
+		  </ul>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	  
+	<div class="container-fluid">
+	  <div class="row-fluid">
+	    <div class="span2">
+	      <ul class="nav nav-list bs-docs-sidenav affix">
+		{% for post in site.posts %}
+		  {% if post.title == page.title %}
+		  <li class="active">
+		    <a href="{{site.baseurl}}{{ post.url }}">
+		      <i class="icon-chevron-right"></i>
+		      {{ post.title }}
+		    </a>
+		  </li>
+		  {% else %}
+		  <li>
+		    <a href="{{site.baseurl}}{{ post.url }}">
+		      <i class="icon-chevron-right"></i>
+		      {{ post.title }}
+		    </a>
+		  </li>
+		  {% endif %}
+		{% endfor %}
+	      </ul>
+	    </div>
+	    <div class="span8">
+	      <div class="main-content">{{ content }}</div>
+	    </div>
+	  </div>
+	  <div class="push"></div>
+	</div>
+      </div>
+      <div class="footer">
+	<div class="container-fluid">
+	  <div class="row-fluid">
+	    <div class="span8 offset2">
+	      <div class="credits">
+		<p class="muted">
+		  Universidad Galileo - <a mailto="diegofigueroa@galileo.edu">diegofigueroa@galileo.edu</a> - CCIV 2013
+		</p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+      </div>
+    </body>
+    
+    <script type="text/javascript" src="{{site.baseurl}}/js/jquery.min.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/bootstrap/js/bootstrap.min.js"></script>
+</html>

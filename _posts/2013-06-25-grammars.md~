@@ -31,7 +31,7 @@ Para este laboratorio deberá implementar un analizador léxico que reconozca lo
 6. Literales booleanos
 7. variables
 8. Símbolos (coma, punto y coma y paréntesis)
-9. Operadores (+,-,*,/,&,|,^,=)
+9. Operadores (+,-,\*,/,&,|,^,=)
 10. Ignorar espacios en blanco
 
 A la sección de Material de Apoyo del `GES` se les subirá un archivo `.zip` con los archivos que pueden utilizar para empezar su analizador léxico. Pueden modificar estos archivos como deseen para asegurar compatibilidad con su version de ANTLR, pero no deberían de tener problema al usarlos.

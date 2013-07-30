@@ -29,7 +29,7 @@ Para este laboratorio deberá implementar un parser que cumpla con las siguiente
 Para implementar la gramatica debe seguir las siguientes reglas.
 1. El inicio será un listado de declaraciones o un listado de expresiones (pueden ser 0 o mas).
 2. El listado de declaraciones son de la forma tipo variable, variable, variable; donde tipo es uno de int, boolean y float y el listado de variables lleva 1 ó más separadas por coma y está terminado por un punto y coma.
-3. El listado de expresiones debe llevar una expresion o una asignación seguido de punto y coma la asignación es de la forma variable = expresion;
+3. El listado de expresiones debe llevar una expresion o una asignacion seguido de punto y coma la asignacion es de la forma variable = expresion;
 4. La expresión puede ser una suma, resta, multiplicación, un número entero decimal o una variable
          E - > E + E |
                E - E |

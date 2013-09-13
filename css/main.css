@@ -128,7 +128,7 @@ html, body{
     max-width: 970px;
   }
   .bs-docs-sidenav {
-    width: 258px;
+    width: 15%;
   }
   .bs-docs-sidenav > li > a {
     width: 230px \9; /* Override the previous IE8-9 hack */
